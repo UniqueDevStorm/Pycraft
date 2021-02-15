@@ -18,4 +18,8 @@ class Voxel(Button):
             scale=1.0
         )
 
+for y in range(20):
+    for x in range(20):
+        voxel = Voxel(position=(x, y, 0))
+
 app.run()
