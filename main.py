@@ -28,9 +28,9 @@ class Voxel(Button):
 
     def input(self, key):
         if self.hovered:
-            if key == 'left mouse down':
+            if key == 'right mouse down':
                 Voxel(position=self.position + mouse.normal)
-            elif key == 'right mouse down':
+            elif key == 'left mouse down':
                 destroy(self)
 
 for z in range(20):
