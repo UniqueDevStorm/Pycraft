@@ -6,6 +6,14 @@ app = Ursina()
 window.fps_counter.enabled = False
 window.exit_button.visible = False
 
+Entity(
+    parent=scene,
+    model='sphere',
+    texture=load_texture('assets/sky.jpg'),
+    scale=500,
+    double_sided=True
+)
+
 class Voxel(Button):
     def __init__(self, position=(0, 0, 0), texture='brick'):
         super().__init__(
