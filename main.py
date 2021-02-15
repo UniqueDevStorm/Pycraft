@@ -22,4 +22,6 @@ for y in range(20):
     for x in range(20):
         voxel = Voxel(position=(x, y, 0))
 
+player = FirstPersonController()
+
 app.run()
