@@ -3,8 +3,8 @@ from ursina.prefabs.first_person_controller import FirstPersonController
 
 app = Ursina()
 
-window.fps_counter.enable = False
-window.exit_button.enable = False
+window.fps_counter.enabled = False
+window.exit_button.visible = False
 
 class Voxel(Button):
     def __init__(self, position=(0, 0, 0), texture='brick'):
