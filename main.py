@@ -26,6 +26,13 @@ class Voxel(Button):
             scale=1.0
         )
 
+    def input(self, key):
+        if self.hovered:
+            if key == 'left mouse down':
+                Voxel(position=self.position + mouse.normal)
+            elif key == 'right mouse down':
+                destroy(self)
+
 for z in range(20):
     for x in range(20):
         voxel = Voxel(position=(x, 0, z))
